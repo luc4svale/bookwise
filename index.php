@@ -19,11 +19,13 @@
 
 <body class="bg-stone-900">
   <!-- Header -->
-   <?php include('./components/header.php'); ?>
+  <?php include('./components/header.php'); ?>
 
   <!-- Search bar -->
-   <?php include('./components/search-bar.php'); ?>
+  <?php include('./components/search-bar.php'); ?>
 
+  <!-- Books List -->
+  <?php include('./components/books-list.php'); ?>
 
   <script src="./js/toggle-menu.js"></script>
 </body>
