@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $books = [
   [
@@ -54,44 +54,44 @@ $books = [
 ?>
 
 <section class="mx-auto max-w-screen-lg px-6 py-3">
-    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <?php foreach ($books as $book): ?>
-        <!-- Book Card -->
-        <li class="border border-stone-400 rounded-lg bg-stone-800 text-stone-400 overflow-hidden">
+  <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <?php foreach ($books as $book): ?>
+      <!-- Book Card -->
+      <li class="border border-stone-400 rounded-lg bg-stone-800 text-stone-400 overflow-hidden">
 
-          <!-- Title -->
-          <h2 class="text-center font-bold text-xl px-3 py-2 bg-stone-400 text-stone-950 overflow-hidden text-ellipsis text-nowrap">
-            <a href="/book.php" class="hover:underline hover:text-stone-700">
-              <?=$book['title']?>
-            </a>
-          </h2>
+        <!-- Title -->
+        <h2 class="text-center font-bold text-xl px-3 py-2 bg-stone-400 text-stone-950 overflow-hidden text-ellipsis text-nowrap">
+          <a href="/book.php" class="hover:underline hover:text-stone-700">
+            <?= $book['title'] ?>
+          </a>
+        </h2>
 
-          <div class="flex items-center border-b border-stone-400">
-            <!-- Image -->
-            <img class="w-1/3 aspect-2/3" src="./uploads/covers/<?=$book['image']?>" alt="Capa do livro '<?=$book['title']?>'">
+        <div class="flex items-center border-b border-stone-400">
+          <!-- Image -->
+          <img class="w-1/3 aspect-2/3" src="./uploads/covers/<?= $book['image'] ?>" alt="Capa do livro '<?= $book['title'] ?>'">
 
-              <!-- Description -->
-              <p class="w-2/3 px-3 font-medium text-sm line-clamp-6 overflow-hidden text-ellipsis break-words" aria-label="Descrição">
-                <?=$book['description']?>
-              </p>
-          </div>
+          <!-- Description -->
+          <p class="w-2/3 px-3 font-medium text-sm line-clamp-6 overflow-hidden text-ellipsis break-words" aria-label="Descrição">
+            <?= $book['description'] ?>
+          </p>
+        </div>
 
 
 
-          <div class="p-3 flex justify-between items-center">
-            <!-- Author -->
-            <p class="text-sm flex items-center gap-x-2" aria-label="Autor">
-              <i class="ph-bold ph-user text-sm"></i> <?=$book['author']?>
-            </p>
+        <div class="p-3 flex justify-between items-center">
+          <!-- Author -->
+          <p class="text-sm flex items-center gap-x-2" aria-label="Autor">
+            <i class="ph-bold ph-user text-sm"></i> <?= $book['author'] ?>
+          </p>
 
-            <!-- Rating -->
-            <p class="text-xs" aria-label="Avaliação">
-              <?=$book['rating']?>
-            </p>
-          </div>
+          <!-- Rating -->
+          <p class="text-xs" aria-label="Avaliação">
+            <?= $book['rating'] ?>
+          </p>
+        </div>
 
-        </li>
-      <?php endforeach; ?>
-    </ul>
+      </li>
+    <?php endforeach; ?>
+  </ul>
 
-  </section>
+</section>
